@@ -363,6 +363,8 @@ Route::group(['prefix' => '/home', 'middleware' => ['auth', 'verified', 'adminAu
 	    Route::get('/edit/{id}', [App\Http\Controllers\AdminPageController::class, 'edit'])->name('edit');
 		Route::post('/store', [App\Http\Controllers\AdminPageController::class, 'store'])->name('store');
 		Route::post('/update/{id}', [App\Http\Controllers\AdminPageController::class, 'update'])->name('update');
+		// ✅ Add this for deleting a page
+    Route::delete('/destroy/{id}', [App\Http\Controllers\AdminPageController::class, 'destroy'])->name('destroy');
 	});
 
 	// Setting Routes

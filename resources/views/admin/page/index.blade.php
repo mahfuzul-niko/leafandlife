@@ -114,6 +114,14 @@
                                     <td>
                                         <a href="{{ route('page.edit', $page->id) }}" class="btn btn-primary"
                                             title="Edit"><i class="fas fa-edit"></i></a>
+                                        <form action="{{ route('page.destroy', $page->id) }}" method="POST"
+                                            style="display:inline-block;">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger" title="Delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach

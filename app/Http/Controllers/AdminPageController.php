@@ -127,6 +127,17 @@ class AdminPageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $page = Page::find($id);
+
+        if (!$page) {
+            Alert::toast('Page not found!', 'error');
+            return back();
+        }
+
+        $page->delete();
+
+        Alert::toast('Page deleted successfully.', 'success');
+        return back();
     }
+
 }
