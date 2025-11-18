@@ -7543,29 +7543,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media only screen and (min-width:1366px) and (max-width:1449px) {
-    .footer__widget--width {
-        width: 25%
-    }
-}
-
-@media only screen and (min-width:1200px) and (max-width:1365px) {
-    .footer__widget--width {
-        width: 31.5%
-    }
-}
-
-@media only screen and (min-width:992px) and (max-width:1199px) {
-    .footer__widget--width {
-        width: 31%
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:991px) {
-    .footer__widget--width {
-        width: 47%
-    }
-}
 
 .social__title {
     font-size: 1.8rem;

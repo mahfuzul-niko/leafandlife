@@ -15,8 +15,6 @@
         .header__search--button__svg {
             color: #ffffff !important;
         }
-
-       
     </style>
     <div class="main__header header__sticky" style="
     background-color: <?php echo $business->header_bg_color ?? 'black'; ?> !important;
@@ -47,12 +45,12 @@
                             Elevate your style with our exclusive collection
                         </p>
                     </div> --}}
-                    <div class="">
+                    <a {{ route('index') }} class="">
                         <h3 class="header_text_color">{{ optional($business)->title }}</h3>
                         <p class="fs-6 lh-sm header_text_color">
                             {{ optional($business)->sub_title }}
                         </p>
-                    </div> 
+                    </a> 
                 </div>
                 <div class="header__search--widget d-none d-lg-block">
                     <form class="d-flex header__search--form" action="#">
