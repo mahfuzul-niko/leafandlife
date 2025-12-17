@@ -126,8 +126,8 @@
                                     @enderror
                                 </div>
                             </div>
-                             <div class="col-md-12">
-                                  <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="form-group">
                                     <label>Title</label>
                                     <input type="text" name="title" required value="{{ optional($setting)->title }}"
                                         class="form-control @error('title') is-invalid @enderror">
@@ -139,9 +139,10 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                  <div class="form-group">
+                                <div class="form-group">
                                     <label>Sub Title</label>
-                                    <input type="text" name="sub_title" required value="{{ optional($setting)->sub_title }}"
+                                    <input type="text" name="sub_title" required
+                                        value="{{ optional($setting)->sub_title }}"
                                         class="form-control @error('sub_title') is-invalid @enderror">
                                     @error('sub_title')
                                         <span class="invalid-feedback" role="alert">
@@ -153,7 +154,8 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Address*</label>
-                                    <input type="text" name="address" required value="{{ optional($setting)->address }}"
+                                    <input type="text" name="address" required
+                                        value="{{ optional($setting)->address }}"
                                         class="form-control @error('address') is-invalid @enderror">
                                     @error('address')
                                         <span class="invalid-feedback" role="alert">
@@ -314,6 +316,20 @@
                                                 value="{{ optional($setting)->facebook }}"
                                                 class="form-control @error('facebook') is-invalid @enderror">
                                             @error('facebook')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Tiktok</label>
+                                            <input type="text" name="tiktok"
+                                                value="{{ optional($setting)->tiktok }}"
+                                                class="form-control @error('tiktok') is-invalid @enderror">
+                                            @error('tiktok')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>

@@ -106,7 +106,7 @@ Route::get('/write-reviews/{order_product_order_id}', [App\Http\Controllers\Page
 
 
 Route::post('/customer-account-update/{id}', [App\Http\Controllers\PageController::class, 'customer_account_update'])->name('customer.account.update');
-Route::post('/customer-password-change', [App\Http\Controllers\PageController::class, 'change_password'])->name('customer.password.change');
+Route::post('/customer-password-change', [App\Http\Controllers\PageController::class, 'change_password'])->name(	'customer.password.change');
 Route::get('/my-wallet', [App\Http\Controllers\PageController::class, 'my_wallet'])->name('customer.wallet');
 Route::post('/my-wallet/point-convert', [App\Http\Controllers\PageController::class, 'my_wallet_point_convert'])->name('customer.point.convert');
 

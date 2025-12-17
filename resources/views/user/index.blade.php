@@ -38,7 +38,7 @@
                                             alt="{{ $category->title }}">
                                     </div>
                                     <div class="col-12 cat-title-box">
-                                        <p class="cat-title"> {{ $category->title }} </p>
+                                        <p class="cat-title text-bold"> {{ $category->title }} </p>
                                     </div>
                                 </div>
                             </a>
